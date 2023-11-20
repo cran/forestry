@@ -158,7 +158,7 @@ fix_items <- function(fix_vector, input_node){
 #' @export
 
 assign_attr <- function(node_from, node_to){
-  field_all <- node_to$fieldsAll
+  field_all <- node_to$attributesAll
   for (i in 1:length(field_all)){
     node_from[[ as.character(field_all[i]) ]] <- node_to[[ as.character(field_all[i]) ]]
   }
